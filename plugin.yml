@@ -1,0 +1,6 @@
+main: joy.hwan.plugin.Coffer.Main
+name: Coffer_plugin
+version: 1.0.0
+author: joy.hwan
+description: Coffer
+api-version: "1.14"
