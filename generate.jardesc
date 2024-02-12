@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <jardesc>
-    <jar path="/Users/kakao/Desktop/plugins/plugins/Cofferr.jar"/>
+    <jar path="/Users/gimdonghwan/Desktop/plugins/server/plugins/Coffer.jar"/>
     <options buildIfNeeded="true" compress="true" descriptionLocation="/Coffer/generate.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
     <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
     <selectedProjects/>
@@ -11,9 +11,13 @@
         </sealing>
     </manifest>
     <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
-        <file path="/Coffer/.classpath"/>
+        <file path="/Coffer/generate.jardesc"/>
+        <javaElement handleIdentifier="=Coffer/src"/>
         <file path="/Coffer/.project"/>
         <file path="/Coffer/plugin.yml"/>
-        <javaElement handleIdentifier="=Coffer/src"/>
+        <file path="/Coffer/README.md"/>
+        <file path="/Coffer/.classpath"/>
+        <file path="/Coffer/LICENSE"/>
+        <file path="/Coffer/.gitignore"/>
     </selectedElements>
 </jardesc>

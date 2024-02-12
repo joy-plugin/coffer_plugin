@@ -10,9 +10,9 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin implements Listener {
-	
+
 	final ColorInventory colorInventory;
-	
+
 	public Main() {
 		this.colorInventory = new ColorInventory(this);
 	}
@@ -27,27 +27,27 @@ public class Main extends JavaPlugin implements Listener {
 	public void onEnable() {
 		// TODO Auto-generated method stub
 		super.onEnable();
-		
+
 		registerEvent();
 	}
-	
+
 	public void registerEvent() {
 		getServer().getPluginManager().registerEvents(colorInventory, this);
 		getServer().getPluginManager().registerEvents(this, this);
 	}
-	
+
 	@EventHandler
 	public void playerInteractEvent(PlayerInteractEvent event) {
 		Player player = event.getPlayer();
-		
+
 		Action action = event.getAction();
-		
-		if(action.equals(Action.RIGHT_CLICK_BLOCK)) {
+
+		if (action.equals(Action.RIGHT_CLICK_BLOCK)) {
 			Block block = event.getClickedBlock();
 			Material material = block.getType();
-			
-			if(material.equals(Material.CHEST)) {
-				
+
+			if (material.equals(Material.CHEST)) {
+				colorInventory.openInventory(player);
 			}
 		}
 	}
